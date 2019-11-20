@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.Formatter;
+
+// The main formats the input from a scanner and prints it out
+
+public class Solution {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+                String form = String.format("%03d", x);
+                int b = s1.length();
+                System.out.printf("%-15s%s\n", s1, form);
+            }
+            System.out.println("================================");
+
+    }
+}
+
+
+
