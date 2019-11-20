@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+// checks if the given word is a palindrome: same word backwards as it is forward
+// example: 
+// input -> madam
+// output -> Yes
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+        String b = "";
+        for (int i = A.length()-1; i >= 0; i--){
+            char a = A.charAt(i);
+            String c = Character.toString(a);
+            b = b + c;
+        }
+        if (b.equals(A)){
+            System.out.println("Yes");
+        } else {
+             System.out.println("No");
+        }
+    }
+}
+
+
+
