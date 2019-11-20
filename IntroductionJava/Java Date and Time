@@ -1,0 +1,15 @@
+   // function returns the day of week (Sunday-Saturday) given the date (month, day, year)
+   
+   public static String findDay(int month, int day, int year) {
+        if (year < 2000 || year > 3000){
+            return null;
+        }
+      Calendar a = Calendar.getInstance();
+        a.set(Calendar.MONTH, month-1);
+        a.set (Calendar.DATE, day);
+        a.set(Calendar.YEAR, year);
+        int day2 = a.get(Calendar.DAY_OF_WEEK);
+        System.out.println(a.get(Calendar.DAY_OF_WEEK));
+        String [] dayofweek = new String [] {"SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY" };
+        return dayofweek[day2-1];
+    }
