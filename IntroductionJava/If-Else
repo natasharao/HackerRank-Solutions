@@ -1,0 +1,32 @@
+import java.io.*;
+    import java.util.*;
+    import java.text.*;
+    import java.math.*;
+    import java.util.regex.*;
+
+// The main given an integer n:
+// prints weird if : n is odd or If n is even and in the inclusive range of 6 to 20
+// prints not weird if : n is even and in the inclusive range of 2 to 5 or greater than 20
+    public class Solution {
+
+        public static void main(String[] args) {
+
+            Scanner sc=new Scanner(System.in);
+            int n=sc.nextInt();            
+            String ans="";
+            if (n >= 1 && n<=100){
+            if(n%2==1){
+              ans = "Weird";
+            }
+            else if (n>= 2 && n<=5){
+                ans = "Not Weird";
+            } else if (n > 5 && n <= 20){
+                ans = "Weird";
+            } else if ( n > 20){
+                ans = "Not Weird";
+            }
+            System.out.println(ans);
+            
+            }
+        }
+    }
