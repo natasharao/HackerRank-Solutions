@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+// main method reads from the scanner as long as the user inputs more information
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+/* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner stdin = new Scanner(System.in);
+        for (int i = 1; stdin.hasNext() == true; i++){
+            System.out.println(i + " " + stdin.nextLine());
+        }
+
+    }
+}
