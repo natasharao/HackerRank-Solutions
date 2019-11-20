@@ -1,0 +1,15 @@
+ // This function reorganizes an array by evens first then odds.
+ 
+ public static int[] evenOdd(int[] nums) {
+        int countEven = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 2 == 0) {
+                int temp = nums[i];
+                nums[i] = nums[countEven];
+                nums[countEven] = temp;
+                countEven++;
+            }
+        }
+        return nums;
+    }
